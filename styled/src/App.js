@@ -78,6 +78,7 @@
 import styled from 'styled-components/macro';
 import Loading from './components/Loading';
 import { DefaultButton, HipsterButton } from './components/Buttons';
+import Form from './components/Form';
 
 function App() {
     return (
@@ -94,6 +95,9 @@ function App() {
             <div style={{ padding: '2rem' }}>
                 <DefaultButton>click me</DefaultButton>
                 <DefaultButton large>click me</DefaultButton>
+            </div>
+            <div style={{ padding: '2rem' }}>
+                <Form />
             </div>
         </>
     );
