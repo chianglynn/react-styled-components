@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Method 1
 // const ComplexTitle = ({ title }) => {
 // return (
-//     <Wrapper>
+//     <Wrapper className="bg-grey">
 //         <h1>{title}</h1>
 //         <div className="underline"></div>
 //     </Wrapper>
@@ -12,7 +12,7 @@ import styled from 'styled-components';
 // Method 2
 const ComplexTitle = ({ title, className }) => {
     return (
-        <div className={className}>
+        <div className={`${className} bg-grey`}>
             <h1>{title}</h1>
             <div className="underline"></div>
         </div>
