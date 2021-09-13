@@ -28,46 +28,61 @@
 //     );
 // }
 
-import { useState } from "react";
-import styled, { ThemeProvider } from "styled-components";
-import GlobalStyles from "./global-styles";
-import Card from "./components/Card";
+///////////////////////////////////////////////////////
 
-const BaseTheme = {
-    color: '#222',
-    backgroundColor: '#fff',
-};
+// import { useState } from "react";
+// import styled, { ThemeProvider } from "styled-components";
+// import GlobalStyles from "./global-styles";
+// import Card from "./components/Card";
 
-const DarkTheme = {
-    color: '#fff',
-    backgroundColor: '#222',
-};
+// const BaseTheme = {
+//     color: '#222',
+//     backgroundColor: '#fff',
+// };
 
-const Container = styled.div`
-    padding: 2rem;
-    color: ${props => props.theme.color};
-    background-color: ${props => props.theme.backgroundColor};
-`;
+// const DarkTheme = {
+//     color: '#fff',
+//     backgroundColor: '#222',
+// };
+
+// const Container = styled.div`
+//     padding: 2rem;
+//     color: ${props => props.theme.color};
+//     background-color: ${props => props.theme.backgroundColor};
+// `;
+
+// function App() {
+//     const [theme, setTheme] = useState(true);
+
+//     const toggleTheme = () => setTheme(!theme);
+
+//     return (
+//         <>
+//             <div style={{ padding: '2rem' }}>
+//                 <GlobalStyles />
+//                 <Card />
+//             </div>
+
+//             <ThemeProvider theme={theme ? BaseTheme : DarkTheme}>
+//                 <Container>
+//                     <h1>hello</h1>
+//                     <button className="btn" onClick={toggleTheme}>toggle</button>
+//                 </Container>
+//             </ThemeProvider>
+//         </>
+//     );
+// }
+
+///////////////////////////////////////////////////////
+
+import styled from 'styled-components';
+import Loading from './components/Loading';
 
 function App() {
-    const [theme, setTheme] = useState(true);
-
-    const toggleTheme = () => setTheme(!theme);
-
     return (
-        <>
-            <div style={{ padding: '2rem' }}>
-                <GlobalStyles />
-                <Card />
-            </div>
-
-            <ThemeProvider theme={theme ? BaseTheme : DarkTheme}>
-                <Container>
-                    <h1>hello</h1>
-                    <button className="btn" onClick={toggleTheme}>toggle</button>
-                </Container>
-            </ThemeProvider>
-        </>
+        <div style={{ padding: '2rem' }}>
+            <Loading />
+        </div>
     );
 }
 
