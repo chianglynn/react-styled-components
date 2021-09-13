@@ -26,6 +26,7 @@ export const HipsterButton = styled(DefaultButton)`
     }
 
     /* <a> tag */
+    box-sizing: border-box;
     font-size: 1rem;
     text-align: center;
     text-decoration: none;
