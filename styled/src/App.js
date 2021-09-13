@@ -28,11 +28,13 @@
 //     );
 // }
 
+import GlobalStyles from "./global-styles";
 import Card from "./components/Card";
 
 function App() {
     return (
         <div style={{ padding: '2rem' }}>
+            <GlobalStyles />
             <Card />
         </div>
     );
