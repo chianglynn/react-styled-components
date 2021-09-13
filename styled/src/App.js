@@ -77,19 +77,25 @@
 
 import styled from 'styled-components/macro';
 import Loading from './components/Loading';
-import { HipsterButton } from './components/Buttons';
+import { DefaultButton, HipsterButton } from './components/Buttons';
 
 function App() {
     return (
-        <div style={{ padding: '2rem' }}>
-            <Loading />
-            <HipsterButton>click me</HipsterButton>
-            <HipsterButton as="a" href="https://www.google.com">click me</HipsterButton>
-            <HipsterButton>click me</HipsterButton>
-            <div css={`color: green;`}>
-                <h2>hello</h2>
+        <>
+            <div style={{ padding: '2rem' }}>
+                <Loading />
+                <HipsterButton>click me</HipsterButton>
+                <HipsterButton as="a" href="https://www.google.com">click me</HipsterButton>
+                <HipsterButton>click me</HipsterButton>
+                <div css={`color: green;`}>
+                    <h2>hello</h2>
+                </div>
+            </div >
+            <div style={{ padding: '2rem' }}>
+                <DefaultButton>click me</DefaultButton>
+                <DefaultButton large>click me</DefaultButton>
             </div>
-        </div >
+        </>
     );
 }
 
