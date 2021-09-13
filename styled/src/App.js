@@ -77,11 +77,15 @@
 
 import styled from 'styled-components';
 import Loading from './components/Loading';
+import { HipsterButton } from './components/Buttons';
 
 function App() {
     return (
         <div style={{ padding: '2rem' }}>
             <Loading />
+            <HipsterButton>click me</HipsterButton>
+            <HipsterButton as="a" href="https://www.google.com">click me</HipsterButton>
+            <HipsterButton>click me</HipsterButton>
         </div>
     );
 }
