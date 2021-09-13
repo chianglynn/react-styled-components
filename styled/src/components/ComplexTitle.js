@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { setupBoarder } from './utils';
 
 // Method 1
 // const ComplexTitle = ({ title }) => {
@@ -15,6 +16,7 @@ const ComplexTitle = ({ title, className }) => {
         <div className={`${className} bg-grey`}>
             <h1>{title}</h1>
             <div className="underline"></div>
+            <div className="border"></div>
         </div>
     );
 };
@@ -32,7 +34,12 @@ const Wrapper = styled(ComplexTitle)`
         margin: 0 auto;
         width: 5rem;
         height: .25rem;
-        background-color: #645cff;
+        background-color: var(--color-primary);
+    }
+
+    .border{
+        height: 10px;
+        border: ${setupBoarder({ width: 5, color: 'red' })};
     }
 `;
 
