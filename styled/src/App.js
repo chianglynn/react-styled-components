@@ -75,7 +75,7 @@
 
 ///////////////////////////////////////////////////////
 
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import Loading from './components/Loading';
 import { HipsterButton } from './components/Buttons';
 
@@ -86,7 +86,10 @@ function App() {
             <HipsterButton>click me</HipsterButton>
             <HipsterButton as="a" href="https://www.google.com">click me</HipsterButton>
             <HipsterButton>click me</HipsterButton>
-        </div>
+            <div css={`color: green;`}>
+                <h2>hello</h2>
+            </div>
+        </div >
     );
 }
 
