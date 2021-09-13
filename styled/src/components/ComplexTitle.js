@@ -16,7 +16,7 @@ const ComplexTitle = ({ title, className }) => {
         <div className={`${className} bg-grey`}>
             <h1>{title}</h1>
             <div className="underline"></div>
-            <div className="border"></div>
+            {/* <div className="border"></div> */}
         </div>
     );
 };
